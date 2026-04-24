@@ -1,0 +1,56 @@
+@import "tailwindcss";
+
+*,
+*::before,
+*::after {
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  background-color: #0a0f1e;
+  color: #e2e8f0;
+  line-height: 1.6;
+}
+
+@theme {
+  /* Brand Colors (Extracted from UMT Logo) */
+  --color-umt-navy: #1d4586;
+  --color-umt-blue: #0068b3;
+  --color-umt-orange: #f37021;
+  --color-umt-dark: #0a0f1e;
+  --color-umt-card: #111827;
+  --color-umt-border: #1f2937;
+  --color-umt-muted: #6b7280;
+  --color-umt-light: #e2e8f0;
+
+  /* Typography Scale */
+  --text-display: 56px;
+  --text-h1: 46px;
+  --text-h2: 36px;
+  --text-h3: 28px;
+  --text-h4: 22px;
+  --text-h5: 18px;
+  --text-body: 16px;
+  --text-small: 14px;
+}
+
+/* Utility: gradient text */
+.gradient-text {
+  background: linear-gradient(135deg, #1d4586 0%, #f37021 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Utility: glass card */
+.glass-card {
+  background: rgba(17, 24, 39, 0.7);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(31, 41, 55, 0.8);
+}
